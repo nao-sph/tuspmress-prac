@@ -18,6 +18,7 @@ window.onload = function(){
 		{ src: 'img/summer.jpg', title: '夏のひまわり' },
 		{ src: 'img/autumn.jpg', title: '秋の紅葉' },
 		{ src: 'img/winter.jpg', title: '冬の山' }
+		{ src: 'img/dog.jpg', title: '犬'}
 	];
 	var photoLength = photoList.length;
 	
