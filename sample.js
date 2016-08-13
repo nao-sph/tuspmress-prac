@@ -17,8 +17,8 @@ window.onload = function(){
 		{ src: 'img/spring.jpg', title: '春の桜' },
 		{ src: 'img/summer.jpg', title: '夏のひまわり' },
 		{ src: 'img/autumn.jpg', title: '秋の紅葉' },
-		{ src: 'img/winter.jpg', title: '冬の山' }
-		{ src: 'img/dog.jpg', title: '犬'}
+		{ src: 'img/winter.jpg', title: '冬の山' },
+		{ src: 'img/dog.jpg', title: '犬'},
 	];
 	var photoLength = photoList.length;
 	
