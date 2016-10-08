@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 簡易スライドショー
  *
  * nextボタンを押したときに画像を切り替える簡単な
@@ -84,8 +84,8 @@ window.onload = function(){
 		// 作成したimg要素に属性を設定
 		img.src = item.src;
 		img.alt = item.title;
-		img.height = 200
-		img.width = 300
+		img.height = 300
+		img.width = 400
 		
 		// 作成したikmg要素をHTMLに追加
 		photo.appendChild(img);
