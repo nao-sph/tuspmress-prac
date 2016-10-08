@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+	<title>Tus Press Web</title>
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<style type="text/css">
+		body{
+			background: #dcdcdc;
+		}
+	</style>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+	<script >
+		$(function () {
+			$('#eee').hover(
+				function(){$('span').show();},
+				function(){$('span').hide();}
+				);
+		});
+		$(function () {$('span').hide();})
+	</script>
+
+<script>
+$(function() {
+  var pushed = false;
+  var y = 0;
+  var vy = 0;
+  $('#1').mousedown(function(e) {
+    $(this).css('cursor', 'n-resize');
+    y = e.clientY;
+    vy = 0;
+    pushed = true;
+    return false;
+  }).mousemove(function(e) {
+    if (pushed) {
+      vy = y - e.clientY;
+      y = e.clientY;
+      $(window).scrollTop($(window).scrollTop() + vy);
+    }
+    return false;
+  }).mouseup(function() {
+    $(this).css('cursor', 'auto');
+    pushed = false;
+    var id = setInterval(function() {
+      var top = $(window).scrollTop();
+      $(window).scrollTop(top + vy);
+      if (pushed || top == $(window).scrollTop()) {
+        clearInterval(id);
+      }
+    }, 10);
+    return false;
+  });
+});
+</script>
+
+</head>
+<body>
+
+<h1>
+	Tus Press Web　とは
+</h1>
+<div class="expl">
+	Tus Press Web（TPW) とは、東京理科大学新聞会が運営しているWebサイトです。<br><br>
+	<em id="eee">
+		ここにカーソルを合わせると詳細説明が表示されます
+	</em>
+	<span id="aaa">
+		<br><br>新聞会のWeb班はつい最近できたもので、これはよいwebサイトを作るための練習です。
+	</span>
+</div>
+<p>
+	段落分けするとこうなる
+</p>
+何も書かないとこうなる
+
+<div>
+	divで囲むとこうなる
+</div>
+
+<div class="expl">
+	classを同じにするとこうなる
+</div>
+<div id="article">
+<article id="1">
+<h3>記事１</h3>
+	Q. When I downloaded the new Windows 10 update, I just clicked the Use Express Settings button during the installation. But what exactly are Express settings, and can I change them after the fact?
+
+A. Like other major upgrades, the Windows 10 Anniversary Update that was released this month has a few configuration screens for you to set your system preferences. On the blue “Get going fast” screen, Microsoft presents a pageful of text that describes all the things the company would like to do with your data if you click the Use Express Settings button, but reading it can take some time.
+
+Many of the Express settings are intended to make using Windows 10 as convenient as possible. If you click the button, you agree to let Microsoft collect data about how you interact with Windows for adding information through voice, typing or stylus — which the company says is to “improve the suggestion and recognition platforms.”
+
+Among other things, using the Express Settings button allows Windows and its apps to request your location data, see your location history, target you with personalized advertising, share your browsing data and let Skype calling software use your contacts list. “Automatically connect to suggested open hot spots” is another setting you get if you go Express, despite the next sentence, which notes, “Not all networks are secure.”
+
+Even if you clicked the Express Settings button — instead of the smaller Customize Settings link in the lower-left corner of the “Get going fast” screen — you can go back into the main Windows 10 Settings app from the Start Menu and change things. Microsoft’s site has a collection of articles about Windows 10 and privacy at support.microsoft.com/en-us/help/12456, including explanations and a how-to guide for adjusting individual settings.
+</article>
+
+<article id="2">
+
+<h3>記事２</h3>
+	Apple, Google, Microsoft and Amazon have created something of a watershed moment in the stock market.
+
+They became the four most valuable companies in the Standard & Poor’s 500-stock index at the close of trading on Aug. 1, according to S.&P.’s official tally. That meant that tech companies, by one common definition, occupied the four top spots in the market capitalization rankings, a rare and brief occurrence.
+
+“It may never have happened before at the close of trading,” said Howard Silverblatt, senior index analyst at S&P Dow Jones Indices. The full history of daily rankings isn’t readily available, however, so we can’t be certain, and such rankings are evanescent, shifting with every tick of the stock market. In fact, on Friday, Amazon dropped back into sixth place.
+
+But no matter: The early August rankings were a reminder of how far tech has come. It is a dominant force in the stock market and the economy, one so all-encompassing that tech may no longer even be a useful concept for understanding today’s stock market.
+
+First, consider the prosaic but consequential details leading to the Aug. 1 market shift. Tech companies have been moving upward in the rankings since the start of the bull market in March 2009, but recent earnings reports have accelerated matters. On July 28, Amazon issued a very strong report, which provided the impetus for its rise, in market cap, past two venerable companies, which regained their fourth and fifth place berths on Friday afternoon.
+
+One of them is Exxon Mobil, the energy giant and the most valuable company in the S.&P. as recently as 2012. But Exxon Mobil has been cut down in size by the oil price debacle. The other is Berkshire Hathaway, Warren E. Buffett’s conglomerate, which the S.&P. categorizes as a financial services company — the only such company left in the Top 10 market cap list. Berkshire announced its own earnings after trading closed on Friday. We’ll soon learn whether the market is pleased enough to vault Berkshire further ahead of Amazon.
+
+The three tech companies at the very top in market cap — Apple, Google and Microsoft — have held high positions for a long while. (Google, ranked second, trades as Alphabet, the name of its parent company.) Google passed Apple in value briefly this year, but Apple regained the top perch, which it has held since 2012. Microsoft, now No. 3, was the most valuable company during the last tech boom, in the early 2000s.
+
+Virtually no one disputes S.&P.’s formal classification of Apple, Google and Microsoft as “information technology” companies. The same is true of Facebook, which held seventh place in the latest list of most valuable companies. But while Amazon is often described as a tech company — and undoubtedly uses and creates innovative technology — S.&P. has never classified it as one.
+
+Continue reading the main story
+In fact, Amazon is formally known as a “consumer discretionary company,” like Walmart, which it has displaced as a member of the Top 10 most valuable companies. Amazon is the only consumer discretionary company left in the Top 10. Is it in some sense a tech company? Certainly, and we’ll get back to that.
+
+But the same can be said, to one degree or another, about the three other members of the Top 10 — old companies that are still prospering in large part because of their mastery of advanced technologies. Johnson & Johnson, for example, which is ranked eighth, is a health care company, yet it is heavily involved in technology of a biological kind. Then there is General Electric, the diversified industrial company (and, until recently, also a financial services company), once described as a bellwether for the entire market. It conducts advanced research and sells tech products.
+
+Last on the list is AT&T, a telecommunications company, which, in an early form, helped create computer languages and operating systems on which modern tech companies are built. In 1957, when the S.&P. 500 was born, an ancestral version of AT&T was the most valuable company in the United States by a very wide margin, said Jeremy J. Siegel, a Wharton business school professor, the author of “Stocks for the Long Run” and a market historian.
+
+“AT&T back then was a highly regulated old phone company,” he says. “It was a giant, later broken up into smaller companies. And it was an outlier, because the other big companies in the S.&P. 500 in that era were mainly materials companies — like United States Steel, DuPont and Union Carbide — and an awful lot of oil companies.”
+
+In 1957, the economy ran on oil, and the biggest energy company was Standard Oil of New Jersey — an ancestor of Exxon Mobil. No pure tech company ranked in the Top 10 back then, not even IBM, which soon became the dominant tech company, a position it held until Microsoft surpassed it in the mid-1990s. That was the decade of the great tech boom, culminating in the bubble that burst in March 2000. Microsoft was No. 1 in market cap at the end of 1999, and four other tech companies — Cisco Systems, Intel, IBM and America Online — were also among the Top 10 most valuable companies. The stock market celebrated tech’s ascendance then, as it does now.
+
+But this is a different era. When you dig deeper into the S.&P. 500, it’s clear that while the valuations of tech companies swelled to unrealistically high proportions in those bubble years, the valuations of most companies are far more modest now. In March 2000, the height of the bubble, the value of information technology companies swelled to 34.5 percent of the total market cap of the S.&P. 500. At the moment, the comparable figure is only 20.7 percent, data from the Bespoke Investment Group shows. That’s not much more than the 15.7 percent share of financial companies or the 15.2 percent share of the health care sector. By contrast, finance ballooned as high as 22.3 percent at the end of 2006, in what can be seen in hindsight as a financial bubble.
+
+On the other hand, materials and energy companies, which together constituted almost half of the total value of the S.&P. 500 in 1957, now account for less than 10 percent of it. That reflects the collapse of energy and commodity prices over the last few years, and it may well be a temporary phenomenon. In the meantime, diversified energy companies like Exxon Mobil are investing heavily in technology, a necessity if they are to flourish.
+
+It’s clear even to energy companies, in other words, that tech’s abiding power in the marketplace is not temporary. Technology permeates every sector of the economy, even those not formally classified as high-tech. Whether companies like Amazon and Johnson & Johnson should carry tech labels is beside the point. Tech has already taken over.
+
+These days every company is a tech company, but some have better niches, faster growth, more attractive offerings or more favorable share prices than others. These kinds of fundamental distinctions will influence the Top 10 rankings of the future.
+</article>
+</div>
+<div id="left">
+	これが左側です
+</div>
+<div id="right">
+	これが右側です
+</div>
+</body>
+</html>
